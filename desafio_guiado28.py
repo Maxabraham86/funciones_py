@@ -65,14 +65,14 @@ for index, item in enumerate(velocidades):
 print(posiciones)
         
 
-
+'''
 
 def factorial_iterativo(n):
     resultado=1
     for i in range(1,n+1):
         resultado*= i
     return resultado
-numero=int(input('Introduce eun número entero para calcular su factorial: '))
+numero=int(input('Introduce un número entero para calcular su factorial: '))
 resultado = factorial_iterativo(numero)
 print('El factorial de', numero, 'es', resultado)
 
@@ -90,17 +90,25 @@ numeros = [4,6,7,4,3]
 resultado = productoria(numeros)
 print ('La productoria de los numeros', numeros,'es', resultado)
 
+
+def calcular(fact_1, prod_1, fact_2):
+    resltf1 = factorial_iterativo(fact_1)
+    restp = productoria(prod_1)
+    restf2 = factorial_iterativo(fact_2)
+    print(f'el valor del factorial 5 es:{resltf1}, de la productoria{restp} y el factorial de 6 es {restf2}')
+
+calcular(fact_1 = 5, prod_1=[4,6,7,4,3], fact_2 = 6)
 '''
 def factorial(numero):
     resultado = 1
     for i in range(1, numero + 1):
-        resultado = i
+        resultado *= i
     return resultado
 
 def productoria(lista_valores):
     producto = 1
     for i in lista_valores:
-        producto= i
+        producto *= i
     return producto
 
 def calcular(fact_1, prod_1, fact_2):
@@ -114,7 +122,7 @@ def calcular(fact_1, prod_1, fact_2):
 calcular(fact_1 = 5, prod_1 = [4,6,7,4,3], fact_2 = 6)
 
 
-'''
+
 
 def factorial_iterativo(n):
     resultado=1
